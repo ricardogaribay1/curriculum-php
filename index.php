@@ -5,7 +5,7 @@ $fecha_nacimiento = "1990-01-10";
 $direccion = "1234 Main St, Ciudad, País";
 $telefono = "+1234567890";
 $email = "john.doe@example.com";
-$foto_perfil = "/foto-cv.jpg";
+$foto_perfil = "/assets/foto-cv.jpg";
 
 // Objetivo Profesional
 $objetivo_profesional = "Desarrollador de software con experiencia en aplicaciones web y 
@@ -114,12 +114,13 @@ $referencias = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - <?php echo $nombre_completo; ?></title>
-    <link href="/adryo-icono.jpg" type="image/x-icon" rel="icon">
-    <link href="/adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
+    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="icon">
+    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="container">
+    <div class="bar"></div>
     <!-- Columna Izquierda -->
     <article class="left-column">
     <section class="profile">
@@ -172,18 +173,19 @@ $referencias = [
 
 <!-- Columna Derecha -->
 <article class="right-column">
+
     <h1><?php echo $nombre_completo; ?></h1>
-    <p class="name-title">Desarrollador de Software</p>
+    <h3 class="name-title">Desarrollador de Software</h3>
 
     <!-- Sección Sobre Mi -->
-    <section class="<about-me">
-        <h2>Sobre Mí</h2>
+    <section class="about-me">
+        <h2>👤Sobre Mí</h2>
         <p><?php echo $objetivo_profesional; ?></p>
     </section>
 
     <!-- Sección de educación -->
     <section class="education">
-        <h2>Educación</h2>
+        <h2>📘Educación</h2>
         <?php foreach ($educacion as $edu) { ?>
             <p><strong><?php echo $edu["titulo"]; ?></strong><br>
                <?php echo $edu["institucion"]; ?> (<?php echo $edu["fecha_inicio"] . " - " . $edu["fecha_fin"]; ?>)<br>
@@ -193,7 +195,7 @@ $referencias = [
 
     <!-- Sección de experiencia -->
     <section class="experience">
-        <h2>Experiencia</h2>
+        <h2>💼Experiencia</h2>
         <?php foreach ($experiencia_laboral as $trabajo) { ?>
             <p><strong><?php echo $trabajo["puesto"]; ?></strong><br>
                <?php echo $trabajo["empresa"]; ?> (<?php echo $trabajo["fecha_inicio"] . " - " . $trabajo["fecha_fin"]; ?>)<br>
@@ -203,7 +205,7 @@ $referencias = [
 
     <!-- Sección de referencias -->
     <section class="references">
-        <h2>Referencias</h2>
+        <h2>📂Referencias</h2>
         <?php foreach ($referencias as $referencia) { ?>
             <p><strong><?php echo $referencia["nombre"]; ?></strong><br>
                <?php echo $referencia["puesto"]; ?> en <?php echo $referencia["empresa"]; ?><br>
@@ -216,3 +218,4 @@ $referencias = [
 
 </body>
 </html>
+
