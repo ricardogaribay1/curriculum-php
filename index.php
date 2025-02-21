@@ -5,7 +5,7 @@ $fecha_nacimiento = "1990-01-10";
 $direccion = "1234 Main St, Ciudad, País";
 $telefono = "+1234567890";
 $email = "john.doe@example.com";
-$foto_perfil = "/assets/foto-cv.jpg";
+$foto_perfil = "/foto-cv.jpg";
 
 // Objetivo Profesional
 $objetivo_profesional = "Desarrollador de software con experiencia en aplicaciones web y 
@@ -114,8 +114,8 @@ $referencias = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - <?php echo $nombre_completo; ?></title>
-    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="icon">
-    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
+    <link href="/adryo-icono.jpg" type="image/x-icon" rel="icon">
+    <link href="/adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
