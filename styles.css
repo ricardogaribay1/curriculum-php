@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 600px;
-    height: 1200px;
+    height: 800px;
     display: flex;
     position: relative;
     gap: 20px;
