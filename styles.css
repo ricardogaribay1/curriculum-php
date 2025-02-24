@@ -4,10 +4,26 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 12px;
+    flex-direction: row;
 }
 
 .section-ul {
     padding-inline-start: 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right-column {
+        order: 1;
+    }
+
+    .left-column {
+        order: 2;
+    }
+    
 }
 
 .list {
@@ -152,4 +168,6 @@ section h2 {
 .profile {
     text-align: center;
 } 
+
+
 
