@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: 12px;
 }
 
 .section-ul {
@@ -55,7 +56,7 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     font-weight: bold;
     margin-bottom: 28px;
@@ -68,7 +69,7 @@ section {
 } 
 
 section h2 {
-    font-size: 13px;
+    font-size: 1.2rem;
     color: #003366;
     padding: 6px 8px;
     border-radius: 15px;
@@ -78,7 +79,7 @@ section h2 {
 
 .left-column p, 
 .left-column ul li {
-    font-size: 12px;
+    font-size: 1rem;
     color: white;
     line-height: 1.5;
 } 
@@ -91,13 +92,13 @@ section h2 {
 
 .right-column p, 
 .right-column ul li {
-    font-size: 12px;
+    font-size: 1rem;
     color: #003366;
     line-height: 1.5;
 } 
 
 .name-title {
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
     background-color: #005588;
     border: 2px solid #003366;
