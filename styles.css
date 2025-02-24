@@ -5,11 +5,18 @@
     font-family: Arial, sans-serif;
 }
 
+.section-ul {
+    padding-inline-start: 0;
+}
+
+.list {
+    list-style-type: none;
+}
+
 body {
     background-color: #68adde;
     display: flex;
     justify-content: center;
-
 }
 
 .container {
@@ -100,10 +107,9 @@ section h2 {
     margin-bottom: 26px;
 } 
 
-/* 
-.section-ul li {
-    list-style-type: none;
-}  */
+.list {
+    color: black;
+}
 
 .right-column {
     text-align: justify;
@@ -145,5 +151,4 @@ section h2 {
 .profile {
     text-align: center;
 } 
-
 
