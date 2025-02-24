@@ -142,7 +142,7 @@ $referencias = [
         <h2>Habilidades</h2>
         <ul class="section-ul">
             <?php foreach ($habilidades as $categoria => $habilidad_list) { ?>
-                <li><strong><?php echo $categoria; ?>:</strong>
+                <li class="list"><strong><?php echo $categoria; ?>:</strong>
                     <ul>
                         <?php foreach ($habilidad_list as $habilidad) { ?>
                             <li><?php echo $habilidad; ?></li>
@@ -218,3 +218,4 @@ $referencias = [
 
 </body>
 </html>
+
