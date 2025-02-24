@@ -9,13 +9,12 @@ body {
     background-color: #68adde;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 
 }
 
 .container {
     width: 600px;
-    height: 920px;
+    height: auto;
     display: flex;
     position: relative;
     gap: 20px;
