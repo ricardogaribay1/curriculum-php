@@ -10,7 +10,7 @@
     padding-inline-start: 0;
 }
 
-@media (max-width: 374px) { 
+@media (max-width: 320px) { 
     .container {
         flex-direction: column;
     }
@@ -127,9 +127,9 @@ section h2 {
     color: black;
 }
 
-.right-column {
+/* .right-column {
     text-align: justify;
-}
+} */
 
 .profile img {
     border: 5px solid #003366;
@@ -167,3 +167,4 @@ section h2 {
 .profile {
     text-align: center;
 } 
+
