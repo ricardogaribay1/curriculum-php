@@ -14,8 +14,8 @@ include 'conexion_adryo.php'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - <?php echo isset($nombre_completo) && !empty($nombre_completo) ? $nombre_completo : ""; ?></title>
-    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="icon">
-    <link href="/assets/adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
+    <link href="adryo-icono.jpg" type="image/x-icon" rel="icon">
+    <link href="adryo-icono.jpg" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,7 +26,7 @@ include 'conexion_adryo.php'
         <article class="left-column">
             <section class="profile">
             <?php 
-                $foto_mostrada = (empty($foto_perfil) || !file_exists($_SERVER['DOCUMENT_ROOT'] . $foto_perfil)) ? '/assets/foto-por-defecto.jpg' : $foto_perfil; 
+                $foto_mostrada = (empty($foto_perfil) || !file_exists($_SERVER['DOCUMENT_ROOT'] . $foto_perfil)) ? 'foto-por-defecto.jpg' : $foto_perfil; 
                 ?>
                 <img src="<?php echo $foto_mostrada; ?>" alt="Foto de perfil" class="profile-pic">
             </section>
